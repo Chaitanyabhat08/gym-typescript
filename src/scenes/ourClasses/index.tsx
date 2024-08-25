@@ -11,36 +11,36 @@ import Class from "./Class";
 
 const classes: Array<ClassType> = [
   {
-    name: "Weight Training Classes",
+    name: "Building 1",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     image: image1,
   },
   {
-    name: "Yoga Classes",
-    image: image2,
+    name: "Building 2",
+    image: image1,
   },
   {
-    name: "Ab Core Classes",
+    name: "Building 3",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    image: image3,
+    image: image1,
   },
   {
-    name: "Adventure Classes",
+    name: "Building 4",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    image: image4,
+    image: image1,
   },
   {
-    name: "Fitness Classes",
-    image: image5,
+    name: "Building 5",
+    image: image1,
   },
   {
-    name: "Training Classes",
+    name: "Building 6",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    image: image6,
+    image: image1,
   },
 ];
 
@@ -48,11 +48,11 @@ type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 };
 
-const OurClasses = ({ setSelectedPage }: Props) => {
+const OurProjects = ({ setSelectedPage }: Props) => {
   return (
-    <section id="ourclasses" className="w-full bg-primary-100 py-40">
+    <section id="ourprojects" className="w-full bg-primary-100 py-40">
       <motion.div
-        onViewportEnter={() => setSelectedPage(SelectedPage.OurClasses)}
+        onViewportEnter={() => setSelectedPage(SelectedPage.ourProjects)}
       >
         <motion.div
           className="mx-auto w-5/6"
@@ -66,12 +66,9 @@ const OurClasses = ({ setSelectedPage }: Props) => {
           }}
         >
           <div className="md:w-3/5">
-            <HText>OUR CLASSES</HText>
+            <HText>OUR PROJECTS</HText>
             <p className="py-5">
-              Fringilla a sed at suspendisse ut enim volutpat. Rhoncus vel est
-              tellus quam porttitor. Mauris velit euismod elementum arcu neque
-              facilisi. Amet semper tortor facilisis metus nibh. Rhoncus sit
-              enim mattis odio in risus nunc.
+              Text about few good projects/overview
             </p>
           </div>
         </motion.div>
@@ -92,4 +89,4 @@ const OurClasses = ({ setSelectedPage }: Props) => {
   );
 };
 
-export default OurClasses;
+export default OurProjects;
